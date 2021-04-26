@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="191fb9f9-05cb-45cf-8387-9c6f6ec6a3ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.PlayFab-Utility.dir/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.PlayFab-Utility.dir/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.PlayFab-Utility.dir/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.PlayFab-Utility.dir/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.PlayFab-Utility.dir/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Editor/PlayFabUtilityEditor.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Editor/SerializableDictionaryPropertyDrawer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Editor/SerializableDictionaryPropertyDrawer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/PlayFabUtility.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PlayFab-Utility.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlayFab-Utility.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +16,11 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Scripts/AutoGeneration/Currency.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/package.json" />
+    </changedPaths>
+  </component>
   <component name="ProjectId" id="1ricCEoRNhihHo0aBfVt8c9uAeU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -34,6 +30,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -46,7 +43,16 @@
       <updated>1619462221484</updated>
       <workItem from="1619462227745" duration="648000" />
       <workItem from="1619465115257" duration="22000" />
+      <workItem from="1619469296779" duration="297000" />
     </task>
+    <task id="LOCAL-00001" summary="Helpers">
+      <created>1619469330177</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1619469330177</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -68,5 +74,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Helpers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Helpers" />
   </component>
 </project>

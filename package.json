@@ -1,5 +1,5 @@
 {
-  "name": "com.unity.playfabutility", 
+  "name": "com.mainx.playfabutility", 
   "version": "1.0.0",
   "displayName": "PlayFab Utility",
   "description": "PlayFab Utility",
@@ -13,5 +13,10 @@
   "repository": { 
     "type": "git",
     "url": "https://github.com/mainx-dev/PlayFab-Utility.git"
+  },
+
+  "dependencies": {
+    "com.mainx.playfabutility": "https://github.com/mainx-dev/PlayFab-Utility.git",
+    "com.mainx.mvvmbase": "https://github.com/mainx-dev/MVVM-Base.git"
   }
 }
