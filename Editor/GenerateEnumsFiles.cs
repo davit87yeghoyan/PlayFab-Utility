@@ -30,7 +30,7 @@ namespace PlayFabUtilityEditor.GenerateEnumsFiles
             List<string> lines = new List<string>()
             {
                 "/* no change this file is generated*/",
-                "namespace Scripts.AutoGeneration",
+                "namespace PlayFabUtility.AutoGeneration",
                 "{",
                 "    public enum Statistic",
                 "    {",
@@ -52,7 +52,7 @@ namespace PlayFabUtilityEditor.GenerateEnumsFiles
             List<string> lines = new List<string>()
             {
                 "/* no change this file is generated*/",
-                "namespace Scripts.AutoGeneration",
+                "namespace PlayFabUtility.AutoGeneration",
                 "{",
                 "    public enum Currency",
                 "    {",
