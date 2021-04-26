@@ -17,7 +17,7 @@ namespace PlayFabUtilityEditor.GenerateEnumsFiles
         
         private static string GetPath()
         {
-            string path = Path.GetFullPath("Packages/com.unity.playfabutility");
+            string path = Path.GetFullPath("Packages/com.mainx.playfabutility");
             if (Directory.Exists(path))
             {
                 return path;
