@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="191fb9f9-05cb-45cf-8387-9c6f6ec6a3ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PlayFab-Utility.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlayFab-Utility.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="191fb9f9-05cb-45cf-8387-9c6f6ec6a3ea" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +17,9 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/package.json" />
     </changedPaths>
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectId" id="1ricCEoRNhihHo0aBfVt8c9uAeU" />
   <component name="ProjectViewState">
@@ -43,7 +43,7 @@
       <updated>1619462221484</updated>
       <workItem from="1619462227745" duration="648000" />
       <workItem from="1619465115257" duration="22000" />
-      <workItem from="1619469296779" duration="297000" />
+      <workItem from="1619469296779" duration="370000" />
     </task>
     <task id="LOCAL-00001" summary="Helpers">
       <created>1619469330177</created>
@@ -52,7 +52,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619469330177</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="division into modules">
+      <created>1619469613082</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1619469613082</updated>
+    </task>
+    <task id="LOCAL-00003" summary="..">
+      <created>1619469642723</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1619469642723</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -75,6 +89,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Helpers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Helpers" />
+    <MESSAGE value="division into modules" />
+    <MESSAGE value=".." />
+    <option name="LAST_COMMIT_MESSAGE" value=".." />
   </component>
 </project>
