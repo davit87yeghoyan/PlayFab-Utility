@@ -13,10 +13,7 @@
   "repository": { 
     "type": "git",
     "url": "https://github.com/mainx-dev/PlayFab-Utility.git"
-  },
-
-  "dependencies": {
-    "com.mainx.playfabutility": "https://github.com/mainx-dev/PlayFab-Utility.git",
-    "com.mainx.mvvmbase": "https://github.com/mainx-dev/MVVM-Base.git"
   }
+
+
 }
