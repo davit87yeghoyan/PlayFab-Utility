@@ -23,8 +23,6 @@ namespace PlayFabUtility
 
         
 
-        
-
         private void Awake()
         {
 #if UNITY_EDITOR
