@@ -9,15 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40ea9e4becff414984e9d56c45be06c1, type: 3}
+  m_Script: {fileID: 11500000, guid: bb4556c1e935d994680ba76d9c07a8df, type: 3}
   m_Name: VirtualCurrency
   m_EditorClassIdentifier: 
   virtualCurrency:
     m_keys: 0100000002000000
     m_values:
-    - sprite: {fileID: 21300000, guid: b656e82187d1d6e4eb516e228fa1a87e, type: 3}
+    - sprite: {fileID: 21300000, guid: d027653a8dd398247a8accaa59ba1ba5, type: 3}
       displayName: Gold
-      displayOrder: 1
-    - sprite: {fileID: 21300000, guid: a4da8da8a5f6dd64a8f331813bd6fba5, type: 3}
+      displayOrder: 
+    - sprite: {fileID: 21300000, guid: 4851d1e71d9514c41ac7dc6a0979b6c8, type: 3}
       displayName: Tree
-      displayOrder: 2
+      displayOrder: 

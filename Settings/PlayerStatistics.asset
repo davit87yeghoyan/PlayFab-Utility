@@ -9,12 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1f9a702326b49bd9b3cc06c63841407, type: 3}
+  m_Script: {fileID: 11500000, guid: 234577e3fc18f404fbaf8cc950582775, type: 3}
   m_Name: PlayerStatistics
   m_EditorClassIdentifier: 
   playerStatistics:
-    m_keys: 09000000
+    m_keys: 090000000f000000
     m_values:
     - sprite: {fileID: 0}
       displayName: Level
+      displayOrder: 
+    - sprite: {fileID: 0}
+      displayName: Experience
       displayOrder: 
