@@ -13,5 +13,12 @@
   "repository": { 
     "type": "git",
     "url": "https://github.com/mainx-dev/PlayFab-Utility.git"
-  }
+  },
+  "samples": [
+    {
+      "displayName": "PlayFab Utility Samples.",
+      "description": "Sample Implementation of PlayFab Utility.",
+      "path": "Samples"
+    }
+  ]
 }
