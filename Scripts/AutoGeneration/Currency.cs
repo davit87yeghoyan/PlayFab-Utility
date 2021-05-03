@@ -7,5 +7,4 @@ namespace PlayFabUtility.AutoGeneration
         GO,
         MO,
     }
-    
 }
