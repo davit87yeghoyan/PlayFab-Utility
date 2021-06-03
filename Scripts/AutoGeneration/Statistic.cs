@@ -5,6 +5,7 @@ namespace PlayFabUtility.AutoGeneration
     {
         TotalRounds,
         TotalGames,
+        TourneyWonHour,
         LastGamesWinLose,
         RoundsWin,
         WinWeek,
@@ -13,11 +14,15 @@ namespace PlayFabUtility.AutoGeneration
         NitBidMetWin,
         WinMonthTime,
         Level,
+        TourneyWonWeek,
         WinAllTime,
         TotalBidMet,
         TotalNitBidMet,
+        TourneyWonMont,
         WinDay,
         WinHour,
         Experience,
+        TourneyWon,
+        TourneyWonDay,
     }
 }
