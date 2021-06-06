@@ -82,19 +82,19 @@ namespace PlayFabUtilityEditor.GenerateEnumsFiles
         
         private static void CreateDirectory()
         {
-            if (!AssetDatabase.IsValidFolder("Assets/PlayFab-Utility"))
+            if (!Directory.Exists("Assets/PlayFab-Utility"))
             {
-                AssetDatabase.CreateFolder("Assets","PlayFab-Utility");
+                Directory.CreateDirectory("Assets/PlayFab-Utility");
             }
 
-            if (!AssetDatabase.IsValidFolder("Assets/PlayFab-Utility/Scripts"))
+            if (!Directory.Exists("Assets/PlayFab-Utility/Scripts"))
             {
-                AssetDatabase.CreateFolder("Assets/PlayFab-Utility","Scripts");
+                Directory.CreateDirectory("Assets/PlayFab-Utility/Scripts");
             }
 
-            if (!AssetDatabase.IsValidFolder("Assets/PlayFab-Utility/Scripts/AutoGeneration"))
+            if (!Directory.Exists("Assets/PlayFab-Utility/Scripts/AutoGeneration"))
             {
-                AssetDatabase.CreateFolder("Assets/PlayFab-Utility/Scripts","AutoGeneration");
+                Directory.CreateDirectory("Assets/PlayFab-Utility/Scripts/AutoGeneration");
             }
         }
     }
