@@ -1,8 +1,7 @@
 {
-    "name": "PlayFabUtilityEditor",
+    "name": "PlayFabUtilityAutoGenerate",
     "references": [
-        "PlayFab",
-        "PlayFabUtility"
+        "PlayFab"
     ],
     "includePlatforms": [
         "Editor"

@@ -1,32 +1,39 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using PlayFab.AdminModels;
+using UnityEditor;
 using UnityEngine;
 
 namespace PlayFabUtilityEditor.GenerateEnumsFiles
 {
+    
+    [InitializeOnLoad]
     public static class GenerateEnumsFiles
     {
         
-        private static string RootFolder => GetPath();
-        private static readonly string CloudScriptPath = RootFolder+"/Scripts/AutoGeneration";
-        private static readonly string StatisticFile = CloudScriptPath + "/Statistic.cs";
-        private static readonly string CurrencyFile = CloudScriptPath + "/Currency.cs";
+        private static readonly string StatisticFile = "Assets/PlayFab-Utility/Scripts/AutoGeneration/Statistic.cs";
+        private static readonly string CurrencyFile = "Assets/PlayFab-Utility/Scripts/AutoGeneration/Currency.cs";
 
-        
-        
-        private static string GetPath()
+
+        static GenerateEnumsFiles()
         {
-            string path = Path.GetFullPath("Packages/com.mainx.playfabutility");
-            if (Directory.Exists(path))
+           
+            if (!File.Exists(StatisticFile))
             {
-                return path;
+                CreateStatisticFile(new List<PlayerStatisticDefinition>());
             }
-            return Application.dataPath + "/PlayFab-Utility";
+            
+            if (!File.Exists(CurrencyFile))
+            {
+                CreateCurrencyFile(new List<VirtualCurrencyData>());
+            }
+            
         }
-        
+
         public static void CreateStatisticFile(List<PlayerStatisticDefinition> statisticDefinitions)
         {
+            CreateDirectory();
+           
             List<string> lines = new List<string>()
             {
                 "/* no change this file is generated*/",
@@ -46,9 +53,10 @@ namespace PlayFabUtilityEditor.GenerateEnumsFiles
             
             File.WriteAllLines(StatisticFile, lines);
         }
-        
+
         public static void CreateCurrencyFile(List<VirtualCurrencyData> currencies)
         {
+            CreateDirectory();
             List<string> lines = new List<string>()
             {
                 "/* no change this file is generated*/",
@@ -66,6 +74,28 @@ namespace PlayFabUtilityEditor.GenerateEnumsFiles
             lines.Add("    }");
             lines.Add("}");
             File.WriteAllLines(CurrencyFile, lines);
+        }
+
+        
+        
+        
+        
+        private static void CreateDirectory()
+        {
+            if (!AssetDatabase.IsValidFolder("Assets/PlayFab-Utility"))
+            {
+                AssetDatabase.CreateFolder("Assets","PlayFab-Utility");
+            }
+
+            if (!AssetDatabase.IsValidFolder("Assets/PlayFab-Utility/Scripts"))
+            {
+                AssetDatabase.CreateFolder("Assets/PlayFab-Utility","Scripts");
+            }
+
+            if (!AssetDatabase.IsValidFolder("Assets/PlayFab-Utility/Scripts/AutoGeneration"))
+            {
+                AssetDatabase.CreateFolder("Assets/PlayFab-Utility/Scripts","AutoGeneration");
+            }
         }
     }
 }
