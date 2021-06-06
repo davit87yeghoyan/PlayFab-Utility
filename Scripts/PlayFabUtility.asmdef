@@ -1,6 +1,8 @@
 {
     "name": "PlayFabUtility",
-    "references": [],
+    "references": [
+        "PlayFabUtilityAutoGenerate"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

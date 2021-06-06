@@ -95,7 +95,18 @@ namespace PlayFabUtilityEditor.GenerateEnumsFiles
             if (!Directory.Exists("Assets/PlayFab-Utility/Scripts/AutoGeneration"))
             {
                 Directory.CreateDirectory("Assets/PlayFab-Utility/Scripts/AutoGeneration");
+                Create_asmdef();
             }
+        }
+        
+        
+        private static void Create_asmdef()
+        {
+            string name = "PlayFabUtilityAutoGenerate";
+            File.WriteAllLines( "Assets/PlayFab-Utility/Scripts/AutoGeneration/"+name+".asmdef", new List<string>()
+            {
+                "{\"name\": \""+name+"\"}",
+            });
         }
     }
 }

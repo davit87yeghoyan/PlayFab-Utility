@@ -1,5 +1,5 @@
 {
-    "name": "PlayFabUtilityAutoGenerate",
+    "name": "PlayFabUtilityAutoGenerateEditor",
     "references": [
         "PlayFab"
     ],
