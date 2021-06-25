@@ -13,11 +13,9 @@ MonoBehaviour:
   m_Name: PlayerStatistics
   m_EditorClassIdentifier: 
   playerStatistics:
-    m_keys: 090000000f000000
+    m_keys: 00000000
     m_values:
-    - sprite: {fileID: 0}
-      displayName: Level
-      displayOrder: 
     - sprite: {fileID: 0}
       displayName: Experience
       displayOrder: 
+  _statistic: 11
