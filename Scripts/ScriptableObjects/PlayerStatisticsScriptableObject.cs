@@ -14,7 +14,6 @@ namespace PlayFabUtility.ScriptableObjects
     }
     
     
-        
     [Serializable]
     public class PlayerStatistics : SerializableDictionary<Statistic, StatisticInfo>
     {
