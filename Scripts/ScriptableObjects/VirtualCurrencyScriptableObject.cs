@@ -1,5 +1,5 @@
 using System;
-using PlayFabUtility.SerializableDictionary;
+using Serializable_Dictionary.SerializableDictionary;
 using PlayFabUtility.AutoGeneration;
 using UnityEngine;
 

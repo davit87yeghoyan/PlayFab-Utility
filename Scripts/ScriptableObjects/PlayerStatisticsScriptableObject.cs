@@ -1,6 +1,6 @@
 using System;
 using PlayFabUtility.AutoGeneration;
-using PlayFabUtility.SerializableDictionary;
+using Serializable_Dictionary.SerializableDictionary;
 using UnityEngine;
 
 namespace PlayFabUtility.ScriptableObjects

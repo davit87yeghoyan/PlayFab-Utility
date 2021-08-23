@@ -2,7 +2,8 @@ using System;
 using System.Linq;
 using PlayFabUtility.AutoGeneration;
 using PlayFabUtility.ScriptableObjects;
-using PlayFabUtility.SerializableDictionary;
+using Serializable_Dictionary.SerializableDictionary;
+
 using UnityEngine;
 
 namespace PlayFabUtility

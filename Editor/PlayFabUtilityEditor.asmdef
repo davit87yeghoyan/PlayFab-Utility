@@ -1,7 +1,9 @@
 {
     "name": "PlayFabUtilityEditor",
     "references": [
-        "PlayFabUtility"
+        "PlayFabUtility",
+        "SerializableDictionary",
+        "SerializableDictionary.Editor"
     ],
     "includePlatforms": [
         "Editor"

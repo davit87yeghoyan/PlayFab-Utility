@@ -1,7 +1,8 @@
 {
     "name": "PlayFabUtility",
     "references": [
-        "PlayFabUtilityAutoGenerate"
+        "PlayFabUtilityAutoGenerate",
+        "SerializableDictionary"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
