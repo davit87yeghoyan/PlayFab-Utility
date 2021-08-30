@@ -9,7 +9,6 @@
     "name": "MAINX",
     "url": ""
   },
-
   "dependencies": {
     "com.mainx.playfabutility": "https://github.com/mainx-dev/PlayFab-Utility.git#2.0.0",
     "com.mainx.serializable.dictionary": "https://github.com/mainx-dev/Serializable-Dictionary.git#1.0.0"
