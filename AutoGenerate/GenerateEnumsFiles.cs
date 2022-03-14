@@ -8,7 +8,7 @@ using UnityEditor;
 namespace PlayFabUtilityEditor.GenerateEnumsFiles
 {
     
-    [InitializeOnLoad]
+    [InitializeOnLoad][MenuItem("AutoGenerate/PlayfabUtility Statistic,Currency")]
     public static class GenerateEnumsFiles
     {
         
