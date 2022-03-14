@@ -1,5 +1,5 @@
 {
-  "name": "com.mainx.playfabutility", 
+  "name": "com.agium.playfabutility", 
   "version": "2.0.0",
   "displayName": "PlayFab Utility",
   "description": "PlayFab Utility",
@@ -10,7 +10,7 @@
     "url": ""
   },
   "dependencies": {
-    "com.mainx.serializable.dictionary": "https://github.com/mainx-dev/Serializable-Dictionary.git#1.0.0"
+    "com.agium.serializable.dictionary": "https://github.com/mainx-dev/Serializable-Dictionary.git#1.0.0"
   },
 
   "repository": { 
