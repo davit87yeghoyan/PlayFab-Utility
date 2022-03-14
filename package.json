@@ -10,12 +10,12 @@
     "url": ""
   },
   "dependencies": {
-    "com.agium.serializable.dictionary": "https://github.com/mainx-dev/Serializable-Dictionary.git#1.0.0"
+    "com.agium.serializable.dictionary": "https://github.com/davit87yeghoyan/Serializable-Dictionary.git#1.0.0"
   },
 
   "repository": { 
     "type": "git",
-    "url": "https://github.com/mainx-dev/PlayFab-Utility.git"
+    "url": "https://github.com/davit87yeghoyan/PlayFab-Utility.git"
   },
   "samples": [
     {
