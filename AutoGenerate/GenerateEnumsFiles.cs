@@ -1,17 +1,18 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using PlayFab;
 using PlayFab.AdminModels;
 using UnityEditor;
+using UnityEngine;
 
 namespace PlayFabUtilityEditor.GenerateEnumsFiles
 {
     
-    [InitializeOnLoad][MenuItem("AutoGenerate/PlayfabUtility Statistic,Currency")]
+    [InitializeOnLoad]
     public static class GenerateEnumsFiles
     {
-        
         private static readonly string StatisticFile = "Assets/PlayFab-Utility/Scripts/AutoGeneration/Statistic.cs";
         private static readonly string CurrencyFile = "Assets/PlayFab-Utility/Scripts/AutoGeneration/Currency.cs";
 
@@ -28,8 +29,28 @@ namespace PlayFabUtilityEditor.GenerateEnumsFiles
             {
                 CreateCurrencyFile(new List<VirtualCurrencyData>());
             }
-            
         }
+
+
+        [MenuItem("AutoGenerate/PlayFabUtility Generate")]
+        public static void SetInfo()
+        {
+            PlayFabAdminAPI.ListVirtualCurrencyTypes(new ListVirtualCurrencyTypesRequest(), result =>
+            {
+                GenerateEnumsFiles.CreateCurrencyFile(result.VirtualCurrencies);
+
+                PlayFabAdminAPI.GetPlayerStatisticDefinitions(new GetPlayerStatisticDefinitionsRequest(), result2 =>
+                {
+                    GenerateEnumsFiles.CreateStatisticFile(result2.Statistics);
+                }, ErrorCallback);
+            }, ErrorCallback);
+        }
+
+        private static void ErrorCallback(PlayFabError obj)
+        {
+            Debug.LogError(obj.GenerateErrorReport());
+        }
+
 
         public static void CreateStatisticFile(List<PlayerStatisticDefinition> statisticDefinitions)
         {
