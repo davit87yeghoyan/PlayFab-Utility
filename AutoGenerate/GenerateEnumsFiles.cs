@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using PlayFab;
+#if ENABLE_PLAYFABADMIN_API
 using PlayFab.AdminModels;
+#endif
+
 using UnityEditor;
 using UnityEngine;
 
@@ -16,7 +19,27 @@ namespace PlayFabUtilityEditor.GenerateEnumsFiles
         private static readonly string StatisticFile = "Assets/PlayFab-Utility/Scripts/AutoGeneration/Statistic.cs";
         private static readonly string CurrencyFile = "Assets/PlayFab-Utility/Scripts/AutoGeneration/Currency.cs";
 
+        
+        [MenuItem("AutoGenerate/PlayFabUtility Generate")]
+        public static void SetInfo()
+        {
+#if ENABLE_PLAYFABADMIN_API
+            PlayFabAdminAPI.ListVirtualCurrencyTypes(new ListVirtualCurrencyTypesRequest(), result =>
+            {
+                GenerateEnumsFiles.CreateCurrencyFile(result.VirtualCurrencies);
 
+                PlayFabAdminAPI.GetPlayerStatisticDefinitions(new GetPlayerStatisticDefinitionsRequest(), result2 =>
+                {
+                    GenerateEnumsFiles.CreateStatisticFile(result2.Statistics);
+                }, ErrorCallback);
+            }, ErrorCallback);
+#else
+            Debug.LogError("set enable ENABLE_PLAYFABADMIN_API"); 
+#endif
+        }
+
+        
+#if ENABLE_PLAYFABADMIN_API
         static GenerateEnumsFiles()
         {
            
@@ -32,19 +55,7 @@ namespace PlayFabUtilityEditor.GenerateEnumsFiles
         }
 
 
-        [MenuItem("AutoGenerate/PlayFabUtility Generate")]
-        public static void SetInfo()
-        {
-            PlayFabAdminAPI.ListVirtualCurrencyTypes(new ListVirtualCurrencyTypesRequest(), result =>
-            {
-                GenerateEnumsFiles.CreateCurrencyFile(result.VirtualCurrencies);
 
-                PlayFabAdminAPI.GetPlayerStatisticDefinitions(new GetPlayerStatisticDefinitionsRequest(), result2 =>
-                {
-                    GenerateEnumsFiles.CreateStatisticFile(result2.Statistics);
-                }, ErrorCallback);
-            }, ErrorCallback);
-        }
 
         private static void ErrorCallback(PlayFabError obj)
         {
@@ -100,7 +111,7 @@ namespace PlayFabUtilityEditor.GenerateEnumsFiles
             File.WriteAllLines(CurrencyFile, lines);
         }
 
-        
+#endif    
         
         
         
