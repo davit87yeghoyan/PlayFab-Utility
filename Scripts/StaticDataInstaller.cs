@@ -60,7 +60,12 @@ namespace PlayFabUtility
             var currency = (Currency) Enum.Parse(typeof(Currency), key, true);
             VirtualCurrency.TryGetValue(currency, out var info);
 #if TERMS_POPUP_PLAYFAB_UTILITY
-            info.displayName = I2.Loc.LocalizationManager.GetTranslation(info.displayName);
+            info = new CurrencyInfo()
+            {
+                sprite = info?.sprite,
+                displayName = I2.Loc.LocalizationManager.GetTranslation(info?.displayName),
+                displayOrder = info?.displayOrder,
+            };
 #endif
             return info;
         }
@@ -70,7 +75,12 @@ namespace PlayFabUtility
             var statistic = (Statistic) Enum.Parse(typeof(Statistic), key, true);
             PlayerStatistics.TryGetValue(statistic, out var info);
 #if TERMS_POPUP_PLAYFAB_UTILITY
-            info.displayName = I2.Loc.LocalizationManager.GetTranslation(info.displayName);
+            info = new StatisticInfo()
+            {
+                sprite = info?.sprite,
+                displayName = I2.Loc.LocalizationManager.GetTranslation(info?.displayName),
+                displayOrder = info?.displayOrder,
+            };
 #endif
             return info;
         }
