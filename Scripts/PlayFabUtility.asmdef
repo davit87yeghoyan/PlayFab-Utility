@@ -2,7 +2,8 @@
     "name": "PlayFabUtility",
     "references": [
         "PlayFabUtilityAutoGenerate",
-        "SerializableDictionary"
+        "SerializableDictionary",
+        "L2"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
