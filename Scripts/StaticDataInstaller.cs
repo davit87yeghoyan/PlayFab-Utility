@@ -57,14 +57,22 @@ namespace PlayFabUtility
      
         public CurrencyInfo GetCurrencyByKey(string key)
         {
-            Currency currency = (Currency) Enum.Parse(typeof(Currency), key, true);
-            return VirtualCurrency.ContainsKey(currency) ? VirtualCurrency[currency] : null;
+            var currency = (Currency) Enum.Parse(typeof(Currency), key, true);
+            VirtualCurrency.TryGetValue(currency, out var info);
+#if TERMS_POPUP_PLAYFAB_UTILITY
+            info.displayName = I2.Loc.LocalizationManager.GetTranslation(info.displayName);
+#endif
+            return info;
         }
         
         public StatisticInfo GetPlayerStatisticsByKey(string key)
         {
-            Statistic statistic = (Statistic) Enum.Parse(typeof(Statistic), key, true);
-            return PlayerStatistics.ContainsKey(statistic) ? PlayerStatistics[statistic] : null;
+            var statistic = (Statistic) Enum.Parse(typeof(Statistic), key, true);
+            PlayerStatistics.TryGetValue(statistic, out var info);
+#if TERMS_POPUP_PLAYFAB_UTILITY
+            info.displayName = I2.Loc.LocalizationManager.GetTranslation(info.displayName);
+#endif
+            return info;
         }
         
         private SerializableDictionary<Statistic, T1> OrderStatistic<T1>(SerializableDictionary<Statistic, T1> statistics) 
